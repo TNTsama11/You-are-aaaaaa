@@ -32,9 +32,9 @@ public class TNTDialog : MonoBehaviour
 
     public void ShowDialog(string scentencesName,float typingSpeed)
     {
+        this.gameObject.SetActive(true);
         scentences = LoadScentences(scentencesName);
         speed = typingSpeed;
-        this.gameObject.SetActive(true);
         StartCoroutine(Type());
     }
 
@@ -87,6 +87,7 @@ public class TNTDialog : MonoBehaviour
             {
                 HideDialog();
             }
+            index = 0;
 
             if (onDialogEnd != null)
             {

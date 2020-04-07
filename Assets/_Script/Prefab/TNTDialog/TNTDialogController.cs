@@ -30,7 +30,6 @@ public class TNTDialogController : MonoBehaviour
         Dialog.SetAutoPlay(AutoPlay, AutoPlaySleep);
         Dialog.SetTittle(Tittle);
         Dialog.SetCharacterImg(CharacterImg);
-
         Dialog.ShowDialog(ScentencesName, typeSpeed);
         return Dialog;
     }
